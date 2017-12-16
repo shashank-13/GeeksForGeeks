@@ -31,9 +31,9 @@ int main()
         for(int i=0;i<n;i++)
         {
             counts[arr[i]]--;
-            counts[k-arr[i]]--;
+            counts[(k-arr[i])%k]--;
             //cout<<arr[i]<<" "<<counts[arr[i]]<<" "<<k-arr[i]<<" "<<counts[k-arr[i]]<<endl;
-            if(counts[arr[i]]<0 || counts[k-arr[i]]<0)
+            if(!(counts[arr[i]]<0 || counts[(k-arr[i])%k]<0))
             {
                 flag+=2;
             }
