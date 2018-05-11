@@ -10,7 +10,7 @@ int Solution::numDecodings(string A) {
         {
             if(A[i]-48 > 0)
                 dp[i]=dp[i-1];
-            if(i>1)
+            if(i>1)3
                 dp[i]+=dp[i-2];
             else
                 dp[i]+=dp[i-1];

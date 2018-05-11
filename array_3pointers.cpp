@@ -7,6 +7,7 @@ int Solution::minimize(const vector<int> &A, const vector<int> &B, const vector<
 
     i=j=k=0;
     int answer=INT_MAX;
+
     while(i<a && j<b && k<c)
     {
         int max1,max2,max3;
